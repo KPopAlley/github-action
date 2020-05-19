@@ -1,5 +1,10 @@
 name: example-firefox
-on: push
+on:
+  push:
+    branches:
+      - "master"
+      - "!jenkins"
+
 jobs:
   firefox:
     runs-on: ubuntu-latest
